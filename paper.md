@@ -3,7 +3,7 @@
 <div class=subtitle>サブタイトル</div>
 <div class=cover>
 <p> 経済学部・経済学科 </p>
-<p> 24110130</p>
+<p> 24110130番 </p>
 <p> 伊藤 千明 </p>
 <p> <br> </p>
 <p> 2028年度 </p>
