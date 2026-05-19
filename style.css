@@ -1,0 +1,109 @@
+
+.author {
+    margin-top:0.5em;
+    text-align: right;
+    font-size: 1em;
+    font-family: "游明朝" ;
+}
+
+.title {
+    text-align: left;
+    font-size: 1.7em;
+    border-bottom: 0;
+    font-family: "游明朝" ;
+}
+
+.date {
+    margin-top: 0.5em;
+    text-align: right;
+    font-size: 1em;
+    font-family: "游明朝" ;
+}
+
+.version {
+    margin-bottom: 1em;
+    text-align: left;
+    font-size: 1em;
+    color: #00ac22;
+}
+
+.version span {
+   border: solid 1px #00ac22;
+   border-radius:5px; 
+}
+
+.ref {
+    text-indent: 0em;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+h1 {
+    border-bottom: 0;
+    font-family: "Yu Gothic UI" ;
+    counter-reset: h2counter h3counter;
+    color: black; 
+    font-size: 180%; 
+}
+
+h2 {
+    border-bottom: 0;
+    font-family: "Yu Gothic UI" ;
+    counter-reset: h3counter;
+    color: black; 
+    font-size: 160%; 
+}
+
+h3 {
+    border-bottom: 0;
+    font-family: "Yu Gothic UI" ;
+    color: black; 
+    font-size: 140%; 
+}
+
+h4 {
+    color: black; 
+    font-size: 120%; 
+}
+
+body {
+    font-family: "游明朝" ;
+    margin-left: 65px;
+    margin-right: 65px;
+    line-height: 190%;
+    padding: 20px 12px;
+    counter-reset: h1counter h2counter h3counter
+}
+
+p {
+    text-indent: 1em;
+    margin: 0em 0px;
+}
+
+table {
+    border-bottom: 1px solid;
+    margin:auto;
+}
+
+thead {
+    border-top: double;
+}
+
+table > tbody > tr + tr > td {
+    border-top: none;
+}
+
+h1:before {
+    counter-increment: h1counter;
+    content: counter(h1counter) "\0000a0\0000a0";
+}
+
+h2:before {
+    counter-increment: h2counter;
+    content: counter(h1counter) "." counter(h2counter) "\0000a0\0000a0";
+}
+
+h3:before {
+    counter-increment: h3counter;
+    content: counter(h1counter) "." counter(h2counter) "." counter(h3counter) "\0000a0\0000a0";
+}
