@@ -1,6 +1,6 @@
 {
+    "markdown-pdf.displayHeaderFooter": false,
     "markdown-pdf.styles": [
         "style.css"
-    ],
-    "markdown-pdf.displayHeaderFooter": false
+    ]
 }
