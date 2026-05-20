@@ -1,0 +1,10 @@
+<div class=advisor>松岡孝恭 准教授 指導</div>
+<div class=title>タイトル</div>
+<div class=subtitle>サブタイトル</div>
+<div class=cover>
+<p> 経済学部・経済学科 </p>
+<p> 学籍番号</p>
+<p> 氏名 </p>
+<p> <br> </p>
+<p> 2028年度 </p>
+</div>

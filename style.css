@@ -1,109 +1,119 @@
-
-.author {
-    margin-top:0.5em;
-    text-align: right;
-    font-size: 1em;
-    font-family: "游明朝" ;
+.advisor {
+  margin-top: 1.5em;
+  text-align: left;
+  font-size: 1.5em;
+  font-family: "游明朝";
 }
 
 .title {
-    text-align: left;
-    font-size: 1.7em;
-    border-bottom: 0;
-    font-family: "游明朝" ;
+  text-align: center;
+  margin-top: 8em;
+  font-size: 1.7em;
+  border-bottom: 0;
+  font-family: "游明朝";
 }
 
-.date {
-    margin-top: 0.5em;
-    text-align: right;
-    font-size: 1em;
-    font-family: "游明朝" ;
+.subtitle {
+  margin-top: 1em;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "游明朝";
 }
 
-.version {
-    margin-bottom: 1em;
-    text-align: left;
-    font-size: 1em;
-    color: #00ac22;
-}
-
-.version span {
-   border: solid 1px #00ac22;
-   border-radius:5px; 
+.cover {
+  margin-top: 15em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.5em;
+  page-break-after: always;
+  font-family: "游明朝";
+  line-height: 250%;
 }
 
 .ref {
-    text-indent: 0em;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-h1 {
-    border-bottom: 0;
-    font-family: "Yu Gothic UI" ;
-    counter-reset: h2counter h3counter;
-    color: black; 
-    font-size: 180%; 
-}
-
-h2 {
-    border-bottom: 0;
-    font-family: "Yu Gothic UI" ;
-    counter-reset: h3counter;
-    color: black; 
-    font-size: 160%; 
-}
-
-h3 {
-    border-bottom: 0;
-    font-family: "Yu Gothic UI" ;
-    color: black; 
-    font-size: 140%; 
-}
-
-h4 {
-    color: black; 
-    font-size: 120%; 
+  text-indent: 0em;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: "游明朝";
+  font-size: 170%;
 }
 
 body {
-    font-family: "游明朝" ;
-    margin-left: 65px;
-    margin-right: 65px;
-    line-height: 190%;
-    padding: 20px 12px;
-    counter-reset: h1counter h2counter h3counter
+  font-family: "游明朝";
+  margin-left: 65px;
+  margin-right: 65px;
+  line-height: 190%;
+  padding: 20px 12px;
 }
 
-p {
-    text-indent: 1em;
-    margin: 0em 0px;
-}
-
-table {
-    border-bottom: 1px solid;
-    margin:auto;
-}
-
-thead {
-    border-top: double;
-}
-
-table > tbody > tr + tr > td {
-    border-top: none;
+h1 {
+  counter-increment: h1counter;
+  counter-set: h2counter 0 h3counter 0 h4counter 0;
+  font-size: 170%;
+  font-family: "游明朝";
+  border-bottom: none;
 }
 
 h1:before {
-    counter-increment: h1counter;
-    content: counter(h1counter) "\0000a0\0000a0";
+    content: "第" counter(h1counter) "節\0000a0\0000a0";
+}
+
+h2 {
+  counter-increment: h2counter;
+  counter-set: h3counter 0 h4counter 0;
+  font-size: 160%;
+  font-family: "游明朝";
+  border-bottom: none;
 }
 
 h2:before {
-    counter-increment: h2counter;
     content: counter(h1counter) "." counter(h2counter) "\0000a0\0000a0";
 }
 
+h3 {
+  counter-increment: h3counter;
+  counter-set: h4counter 0;
+  font-family: "游明朝";
+  font-size: 150%;
+}
+
 h3:before {
-    counter-increment: h3counter;
-    content: counter(h1counter) "." counter(h2counter) "." counter(h3counter) "\0000a0\0000a0";
+    content: counter(h1counter) "." counter(h2counter) "." counter(h3counter)
+    "\0000a0\0000a0";
+}
+
+h4 {
+  counter-increment: h4counter;
+  font-size: 140%;
+  font-family: "游明朝";
+}
+
+h4:before {
+  content: "(" counter(h4counter) ")\0000a0\0000a0";
+}
+
+p {
+  text-indent: 1em;
+  margin: 0em 0px;
+}
+
+table {
+  border-bottom: 1px solid;
+  margin: auto;
+}
+
+thead {
+  border-top: double;
+}
+
+table > tbody > tr + tr > td {
+  border-top: none;
+}
+
+.ref2 p {
+  padding-left: 2em; /* Indent all lines */
+  text-indent: -2em;
 }
